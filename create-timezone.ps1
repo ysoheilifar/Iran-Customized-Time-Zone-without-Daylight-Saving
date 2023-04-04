@@ -20,6 +20,7 @@ Set-ItemProperty -Path "$key_path\$key_name" -Name "Std" -Value $std
 Set-ItemProperty -Path "$key_path\$key_name" -Name "MUI_Dlt" -Value $mui_dlt
 Set-ItemProperty -Path "$key_path\$key_name" -Name "MUI_Std" -Value $mui_std
 
+#Set the timezone value
 $tziHexValue = "2e-ff-ff-ff-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00"
 $byteArray = $tziHexValue -split "-" | ForEach-Object { [byte]([convert]::ToInt32($_, 16)) }
 New-ItemProperty -Path "$key_path\$key_name" -Name TZI -Value $byteArray -PropertyType Binary -Force | Out-Null
