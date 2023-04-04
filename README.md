@@ -2,4 +2,4 @@
 
 Run the powershell Script and Enjoy it
 
-<img src="time-zone.jpg">
+<p align="center"> <img src="time-zone.jpg"> </p>
