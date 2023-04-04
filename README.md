@@ -1,2 +1,3 @@
-# Iran-Customized-Time-Zone-No-Daylight-Saving
-Iran Customized Time Zone without Daylight Saving
+# Iran Customized Time Zone without Daylight Saving
+Run the powershell Script and Enjoy it
+<img src="time-zone.jpeg">
