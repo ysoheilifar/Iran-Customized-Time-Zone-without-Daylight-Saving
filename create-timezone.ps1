@@ -26,5 +26,5 @@ $tziHexValue = "2e-ff-ff-ff-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-00-0
 $byteArray = $tziHexValue -split "-" | ForEach-Object { [byte]([convert]::ToInt32($_, 16)) }
 New-ItemProperty -Path "$key_path\$key_name" -Name TZI -Value $byteArray -PropertyType Binary -Force | Out-Null
 
-# Set the time zone information using the tzutil command
+# Set the time zone information
 tzutil /s $key_name
