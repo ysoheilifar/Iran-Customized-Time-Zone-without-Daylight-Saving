@@ -10,6 +10,6 @@ Both the Registry file and Powershell script will perform the same task. It's ju
 
 After running one of them, a new Timezone will be added to Windows and you can select it in Windows Setting like below:
 
-![Time Zone](./time-zone.jpg)
+![Time Zone](time-zone.jpg)
 
 It's possible to place one of these files in GPO for bulk updates.
